@@ -1,0 +1,27 @@
+.block{
+    background-image: url('..//..//depositphotos_104535502-stock-photo-background-texture-of-a-old.jpg');
+    padding-bottom: 40px;
+}
+.footer{
+    background-image:linear-gradient(#071651, #3e4873) ;
+    color: #dcdee9;
+    text-shadow: 0 0 1px darkslategray;
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+    height: 400px;
+    margin-left: 10%;
+    text-shadow: 2px 2px black;
+    padding-top: 10px;
+}
+img{
+    margin-top: 10px;
+    width: 100%;
+    height: 380px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #dcdee9;
+    font-weight: 900;
+    margin-left: 45px; 
+}

@@ -1,0 +1,65 @@
+.block{
+    background-image: url('..//..//depositphotos_104535502-stock-photo-background-texture-of-a-old.jpg');
+    padding-top: 20px;
+    }
+header{
+    background-image:linear-gradient(#071651, #3e4873) ;
+    color: #dcdee9;
+    text-shadow: 0 0 1px darkslategray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 80%;
+    margin-left: 10%;
+    text-shadow: 2px 2px black;
+}
+.logoImg{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+}
+img{
+    margin-top: 30px;
+    margin-left: 10%;
+    height: 270px;
+    width: 470px;
+}
+.name{
+    width: 46%;
+    margin-left: 10%;
+}
+.name > h1{
+    margin-top: 10px;
+    color: bisque;
+    font-size: 36px;
+}
+.name > h2{
+    margin-top: 10px;
+    font-size: 26px;
+}
+.name > h3{
+    font-size: 26px;
+}
+.tel{
+        color: bisque;
+        font-size: 30px;
+        margin-left: 45%;
+        margin-top: -3%;
+}
+.menu{
+    height: 50px;
+    background-color: #15161b;
+    padding-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu > a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #dcdee9;
+    font-weight: 900;
+    margin-left: 75px;
+    }
+.menu > a:hover{
+    height: 60px;
+    box-shadow: 1px 5px 13px 13px #3e4873 ;
+    background-color: #3e4873;
+}

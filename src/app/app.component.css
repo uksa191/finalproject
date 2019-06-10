@@ -1,0 +1,99 @@
+.block{
+    background-image: url('..//depositphotos_104535502-stock-photo-background-texture-of-a-old.jpg')
+}
+.content{
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid lightslategray;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+h1{
+    font-weight: bolder;
+    color: #071651;
+    text-align: center;
+    font-size: 40px;
+}
+p{
+    font-size: 16px;
+    margin-left: 5%;
+    margin-right: 5%; 
+    font-family: 'Courier New', Courier, monospace;
+}
+.gallImg{
+    display: inline;
+    margin-left: 7%;  
+}
+.gallery{
+    margin-top: 50px;
+}
+.inp{
+    display: inline;
+    color: #071651;
+}
+.inp > input{
+    border-radius: 15px;
+    height: 40px;
+    width: 50%;
+    border: 2px outset lightblue;
+}
+.com{
+    display: flex;
+    color: #071651;
+    margin-top: 15px;
+} 
+.com > textarea{
+    justify-content: flex-start;
+    border-radius: 15px;
+    border-style: inset ;
+    border: 2px outset lightblue;
+    width: 53%;
+}
+.btn{
+    margin-left: 35%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border-style: inset ;
+    border: 2px outset lightblue;
+    background-color: aqua;
+    color: #071651;
+    width: 20%;
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.btn:disabled{  
+    background-color: lightblue;
+}
+.listComment{
+    margin-left: 10%;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: #071651;
+    width: 80%;
+    list-style: circle  url('..//img/kisspng-brian-griffin-peter-griffin-glenn-quagmire-family-family-guy-png-photos-5a72cdc607f7b2.1620584515174732220326.gif');
+}
+.order{
+    margin-left: 15%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 80%;  
+}
+.order span{
+    font-size: 20px;
+    color: #071651;
+}
+.mes > span{
+    font-size: 20px;
+    color: red;
+}
+.mes{
+    margin-top: 70px;
+    height: 100px;
+}
+hr{
+    width: 80%;
+}

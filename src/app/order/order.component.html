@@ -1,0 +1,56 @@
+<div class="block">
+  <div class="content">
+    <div class="order">
+      <span>Здійснити замовлення ви можете зателефонувавши нам по телефону або заповнивши наступну форму!!</span><br><br>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()" #ghn> 
+        <div class="form-group" class="inp" >
+          <label>Ваше ім'я:</label>
+          <input type="text"  class="form-control" formControlName='name'>
+          <div *ngIf="f.name.errors && f.name.invalid && (f.name.dirty || f.name.touched)" class=" alert alert-primary">
+            <div *ngIf="f.name.errors.required">Це поле обов'язкове для заповнення</div>
+        </div>
+        </div>
+        <div class="form-group" class="inp" >
+          <label>Ваш номер телефону:</label>
+           <input type="tel" class="form-control"  formControlName='phone' required pattern="[0-9]{3} [0-9]{2} [0-9]{2} [0-9]{3}" >
+          <div *ngIf="f.phone.errors && f.phone.invalid && (f.phone.dirty || f.phone.touched)" class=" alert alert-primary">
+            <div *ngIf="f.phone.errors.required">Введіть номер телефону у форматі 0ХХ ХХ ХХ ХХХ</div>
+          </div>
+        </div>
+
+        <div class="form-group" class="inp" >
+          <label>Ваша електронна адреса:</label>
+          <input type="email" class="form-control"  formControlName='mail' required>
+          <div *ngIf="f.mail.errors && f.mail.invalid && (f.mail.dirty || f.mail.touched)" class=" alert alert-primary">
+            <div *ngIf="f.mail.errors.required">Введіть правильну адресу електронної пошти</div>
+          </div>
+        </div>
+
+        <div class="form-group" class="inp" >
+          <label>Запчастини до якого автомобіля вас цікавлять:</label>
+          <input type="tex" class="form-control" formControlName='car'  required>
+          <div *ngIf="f.car.errors && f.car.invalid && (f.car.dirty || f.car.touched)" class=" alert alert-primary">
+            <div *ngIf="f.car.errors.required">Це поле обов'язкове для заповнення</div>
+          </div>
+        </div>
+
+        <div class="form-group" class="com" >
+          <label>Повідомлення:</label>
+          <textarea  formControlName='massage' required ></textarea>
+          <div *ngIf="f.massage.errors && f.massage.invalid && (f.massage.dirty || f.massage.touched)" class=" alert alert-primary">
+            <div *ngIf="f.massage.errors.required">Це поле обов'язкове для заповнення</div>
+          </div>
+        </div>
+        <button type="submit" [disabled]='form.invalid' class="btn">Відправити</button>
+       </form>
+           <div  class="mes" *ngIf="ghn.submited" >
+        <span>
+          Ваш запит успішно відправлено! Наш менеджер зв'яжеться з вами на протязі години.
+        </span>
+      </div>
+      </div>
+    <hr>
+    {{form.submited}}
+  </div>
+</div>
+
